@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: rgba(0,0,0,0.9);
+}
+
+#board{
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin: auto;
+	margin-top: 5vh;
+}
+
+.cell{
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	margin: 5px;
+	border-radius: .5rem;
+	background-color: black;
+	color: white;
+	font-size: 5rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: cursive;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#row1, #row2, #row3{
+	display:flex;
+}
+
+.cell:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 100px white;
+}
+
+#scoreBoard{
+	width: fit-content;
+	margin: auto;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-end;
+	color: white;
+	font-family: cursive;
+	transition: 0.5s; 
+	transform: scale(0);
+}
+	
+#msgBox{
+	background-color: rgba(0,0,0,0.9);
+	border:1px solid gray;
+	border-radius: 1rem;
+	position: absolute;
+	top: 43%;
+	left: 35%;
+	width: 30%;
+	height: 20%;
+	margin: auto;
+	transition: 0.5s;
+	color: white;
+	font-family: cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	transform: scale(0);
+}
+
+#xTurn{
+	position: absolute;
+	top: 30vh;
+	left: 10vw;
+	color: white;
+	font-weight: bolder;
+	font-size: 10rem;
+	font-family: cursive;
+	opacity: .2;
+}
+
+#oTurn{
+	position: absolute;
+	top: 30vh;
+	left: 80vw;
+	color: white;
+	font-weight: bolder;
+	font-size: 10rem;
+	font-family: cursive;
+	opacity: .2;
+}
+
+.brightTurn{
+	opacity: 1!important;
+	text-shadow: 0px 0px 100px white;
+}
